@@ -1,0 +1,2135 @@
+2011/12/28 11:52:47 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2011/12/28 11:52:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection连接数据库失败' in D:\website\yii-svn\framework\db\CDbConnection.php:370
+Stack trace:
+#0 D:\website\yii-svn\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 D:\website\yii-svn\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 D:\website\yii-svn\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\website\yii-svn\framework\base\CApplication.php(429): CModule->getComponent('db')
+#4 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(609): CApplication->getDb()
+#5 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(2275): CActiveRecord->getDbConnection()
+#6 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(product))
+#7 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('product')
+#8 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#9 D:\website\yiicms\protected\controllers\SiteController.php(23): CActiveRecord->__construct()
+#10 D:\website\yii-svn\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 D:\website\yii-svn\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#12 D:\website\yii-svn\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#13 D:\website\yii-svn\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('')
+#15 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('')
+#16 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#17 D:\website\yiicms\index.php(11): CApplication->run()
+#18 {main} REQUEST_URI=/
+2011/12/28 11:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:52:51 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+2011/12/28 11:52:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection连接数据库失败' in D:\website\yii-svn\framework\db\CDbConnection.php:370
+Stack trace:
+#0 D:\website\yii-svn\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 D:\website\yii-svn\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 D:\website\yii-svn\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\website\yii-svn\framework\base\CApplication.php(429): CModule->getComponent('db')
+#4 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(609): CApplication->getDb()
+#5 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(2275): CActiveRecord->getDbConnection()
+#6 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(product))
+#7 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(387): CActiveRecord::model('product')
+#8 D:\website\yii-svn\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#9 D:\website\yiicms\protected\controllers\SiteController.php(23): CActiveRecord->__construct()
+#10 D:\website\yii-svn\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 D:\website\yii-svn\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#12 D:\website\yii-svn\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#13 D:\website\yii-svn\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('')
+#15 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('')
+#16 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#17 D:\website\yiicms\index.php(11): CApplication->run()
+#18 {main} REQUEST_URI=/
+2011/12/28 11:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:55:34 [error] [php] Undefined index: id (D:\website\yiicms\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(278): SiteController->runAction()
+#1 D:\website\yii-svn\framework\web\CController.php(257): SiteController->runActionWithFilters()
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(277): SiteController->run()
+#3 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#4 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#5 D:\website\yiicms\index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2011/12/28 11:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner2.01.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner2.01.jpg
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Carsoft 6.5.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Carsoft%206.5.jpg
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_Scanner 0.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_Scanner%200.jpg
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:57:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('content/images/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/content/images/logo.png
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('images')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('images')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('content/images/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/content/images/i_search_go.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD900 Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD900%20Key%20programmer.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK400 Benz BMW Smart Key make.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK400%20Benz%20BMW%20Smart%20Key%20make.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK200 BMW Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK200%20BMW%20Key%20Maker.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD90 Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD90%20Key%20Maker.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Benz Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Benz%20Key%20programmer.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Fiat Key Programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Fiat%20Key%20Programmer.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Key Copy tool.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Key%20Copy%20tool.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/BMW Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/BMW%20Key%20programmer.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Gambit Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Gambit%20Key%20Maker.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Ford(Focus),MAZDA KeyMaker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Ford(Focus),MAZDA%20KeyMaker.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/MB Key NEC Programmer(IR Smart Key Pro).jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/MB%20Key%20NEC%20Programmer(IR%20Smart%20Key%20Pro).jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/MVP Key Decoder.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/MVP%20Key%20Decoder.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Toyota Lexus Smart Keymaker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Toyota%20Lexus%20Smart%20Keymaker.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Toyota Key maker 4D chip.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Toyota%20Key%20maker%204D%20chip.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/VAGDA SHCOM CAN.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/VAGDA%20SHCOM+CAN.jpg
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner2.01.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner2.01.jpg
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Carsoft 6.5.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Carsoft%206.5.jpg
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_Scanner 0.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_Scanner%200.jpg
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('admin')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/admin
+2011/12/28 11:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner2.01.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner2.01.jpg
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_Scanner 0.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_Scanner%200.jpg
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Carsoft 6.5.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Carsoft%206.5.jpg
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('product/cate_id...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/product/cate_id/images/logo.png
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('product/cate_id...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/product/cate_id/images/i_search_go.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/Odometer Correction Kit/BMW CAS3 Programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/Odometer%20Correction%20Kit/BMW%20CAS3%20Programmer.jpg
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/Odometer Correction Kit/DigiMaster II.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/Odometer%20Correction%20Kit/DigiMaster%20II.jpg
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/Odometer Correction Kit/R250S programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/Odometer%20Correction%20Kit/R250S%20programmer.jpg
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/Odometer Correction Kit/TACHO Pro V2008.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/Odometer%20Correction%20Kit/TACHO%20Pro%20V2008.jpg
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD900 Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD900%20Key%20programmer.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD90 Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD90%20Key%20Maker.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK200 BMW Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK200%20BMW%20Key%20Maker.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/BMW Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/BMW%20Key%20programmer.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Benz Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Benz%20Key%20programmer.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK400 Benz BMW Smart Key make.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK400%20Benz%20BMW%20Smart%20Key%20make.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Fiat Key Programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Fiat%20Key%20Programmer.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Gambit Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Gambit%20Key%20Maker.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Key Copy tool.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Key%20Copy%20tool.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Ford(Focus),MAZDA KeyMaker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Ford(Focus),MAZDA%20KeyMaker.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/MB Key NEC Programmer(IR Smart Key Pro).jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/MB%20Key%20NEC%20Programmer(IR%20Smart%20Key%20Pro).jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Toyota Key maker 4D chip.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Toyota%20Key%20maker%204D%20chip.jpg
+2011/12/28 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/MVP Key Decoder.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/MVP%20Key%20Decoder.jpg
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/VAGDA SHCOM CAN.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/VAGDA%20SHCOM+CAN.jpg
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Toyota Lexus Smart Keymaker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Toyota%20Lexus%20Smart%20Keymaker.jpg
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/logo.png"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/logo.png')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/logo.png
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/i_search_go.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('images/i_search...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/images/i_search_go.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/i_search_go.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/images/logo.png
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 11:59:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "cate_id" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('cate_id')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('cate_id')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('notice/cate_id/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\index.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/notice/cate_id/jyjy/jy1/1.htm
+2011/12/28 11:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 11:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:01:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/dhl.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/dhl.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/boc.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/boc.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ems.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ems.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/moneygram.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/moneygram.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/paypal.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/paypal.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/tnt.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/tnt.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/ups.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/ups.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/wetern.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/wetern.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/2.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/2.gif
+2011/12/28 12:52:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/links/1.gif"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/links/1.gif
+2011/12/28 12:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner2.01.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner2.01.jpg
+2011/12/28 12:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/Tcode 7.2 version.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/Tcode%207.2%20version.jpg
+2011/12/28 12:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner1_35.JPG"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner1_35.JPG
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Scanner2.01.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Scanner2.01.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW_Scanner1_36.JPG"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW_Scanner1_36.JPG
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_Scanner 0.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_Scanner%200.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW carsoft 7.4 Multiplexer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20carsoft%207.4%20Multiplexer.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Carsoft 6.5.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Carsoft%206.5.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD90 Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD90%20Key%20Maker.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AD900 Key programmer.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AD900%20Key%20programmer.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK200 BMW Key Maker.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK200%20BMW%20Key%20Maker.jpg
+2011/12/28 12:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/car key programmer/AK400 Benz BMW Smart Key make.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/car%20key%20programmer/AK400%20Benz%20BMW%20Smart%20Key%20make.jpg
+2011/12/28 12:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "uploads/images/BMW_BENZ/BMW Carsoft 6.5.jpg"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('uploads/images/...')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/uploads/images/BMW_BENZ/BMW%20Carsoft%206.5.jpg
+2011/12/28 12:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2011/12/28 12:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\website\yii-svn\framework\web\CWebApplication.php:281
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 D:\website\yiicms\index.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico

@@ -1,0 +1,140 @@
+###Requirements
+* Yii 1.0 or above
+
+###Installation
+* Extract the release file under `protected/extensions`
+
+###Usage
+
+#### Step 1:
+
+Before you start using it, you must set up a table in your database that can store hierarchical information. Using the "modified pre-order tree traversal algorithm" requires that table has some extra fields that allow us to store the structure of the tree. These columns are: ['id','lft','rgt','level']. Make sure that before you start modifying your tree, you you have one "root node" in your database. The node MUST have depth/level 0, and when it's the only node in the table, it has lft & right values of respectively 0 and 1.
+
+I added a sql file as an example to the extension:
+
+~~~
+[sql]
+CREATE TABLE IF NOT EXISTS `tree` (
+  `id` int(11) NOT NULL auto_increment,
+  `lft` int(11) NOT NULL,
+  `rgt` int(11) NOT NULL,
+  `level` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  KEY `lft` (`lft`),
+  KEY `rgt` (`rgt`),
+  KEY `level` (`level`),
+  KEY `name` (`name`)
+) 
+
+-- When using MySQL: add this:
+-- ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+INSERT INTO `tree` (`id`, `lft`, `rgt`, `level`, `name`) VALUES
+(1, 0, 1, 0, 'Root');
+~~~
+
+#### Step 2:
+Now, we need to make sure the extension is loaded by Yii by adding it to your config file:
+
+~~~
+[php]
+
+return array(
+    //...
+    'import'=>array(
+		//...
+		'application.extensions.nestedset.*'
+	),
+    //...
+);
+~~~
+
+#### Step 3:
+
+Your third task is to create a model that extends the CActiveTreeRecord class. This is pretty straightforward and works almost the same as the default CActiveRecord class. The only thing thati s different that you add the TreeBehavior to your model:
+~~~
+[php]
+<?php
+
+class Tree extends CActiveRecord
+{
+    public static function model($className=__CLASS__)
+    {
+        return parent::model($className);
+    }
+    
+    public function behaviors(){
+        return array(
+            'TreeBehavior' => array(
+                'class' => 'application.extensions.nestedset.TreeBehavior'
+            )
+        );
+    }
+}
+
+?>
+~~~
+
+When you use different column-names for your id/left/right/level columns, you can override the default names by setting the behavior parameters in your model:
+
+~~~
+[php]
+public function behaviors(){
+    return array(
+        'TreeBehavior' => array(
+            'class' => 'application.extensions.nestedset.TreeBehavior',
+            '_idCol' => 'id',
+            '_leftCol' => 'left',
+            '_rightCol' => 'right',
+            '_levelCol' => 'level',
+        )
+    );
+}
+~~~
+
+#### Step 4:
+
+When you have created your model, you are ready to use it in your controllers. See the example controller file for more tree manipulations.
+
+~~~
+[php]
+
+$root = Tree::model()->findByPK(1);
+
+$newNode = new Tree();
+$newNode->name = "First Node";
+$root->appendChild($newNode); //You do not have to use the "save" function here.
+
+$newNode2 = new Tree();
+$newNode2->name = "Second Node";
+$root->appendChild($newNode2); //You do not have to use the "save" function here.
+
+$newNode3 = new Tree();
+$newNode3->name = "GrandChild Node";
+$newNode->appendChild($newNode3); //You do not have to use the "save" function here.
+
+// The structure looks like this:
+//  * Root
+//  -- * First Node
+//  -- -- * GrandChild Node
+//  -- * Second Node
+
+// Let's do some modifications:
+$newNode2->moveLeft();
+
+// The structure now looks like this:
+//  * Root
+//  -- * Second Node
+//  -- * First Node
+//  -- -- * GrandChild Node
+
+$newNode3->moveUp();
+
+// And finally, the structure now looks like this:
+//  * Root
+//  -- * Second Node
+//  -- * First Node
+//  -- * GrandChild Node
+
+~~~

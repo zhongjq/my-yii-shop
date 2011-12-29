@@ -1,0 +1,69 @@
+version 1.0.8
+    - add : added the 'match' validator (regular expression) - added form15 to the sample App
+	- update : original jquery.validate.js file was modified in order to make it compliante with JS compressors. In particular, 
+	opening and closing braces were added to single 'if' statement (thanks to scythah).
+	- update : getCurrentFormId() is now public
+	
+version 1.0.7
+	- fixed : js validation rules are not correctly applied when scenario is used (thanks to Jaime)
+    - fixed : EHtml::setScenario() and EJFValiudate->setScenario() now forward new scenario
+      to CHtml::scenario (thanks to mindeh)
+    - update : modify form11 so onfocusout and onkeyup are active
+      
+version 1.0.6
+    - update : sample App (add form13 to illustrate how to create new validators on both
+      client and server side).
+    - update : now EHtml::endForm() and EJFValidate.endForm() always return tag </form>. Consequently
+      all forms should be updated and closing form tag removed.
+    - update : add EJFValidate.beginForm()
+    - new : ajax submit suport - EHtml::ajaxSubmitButton method wraps CHtml::ajaxSubmitButton and 
+      supports all its functionnalities
+    - update : jquery.jfvalidate.helper.js is updated so when a form needs to be normalized, 
+      function $.fn.EJFValidate.uniqueName() is invoked on ajax request completed. 
+    
+version 1.0.5
+    - fix : call to methode_exists() (line 262)
+    - fix : Undefined index: notInt (line 369)
+      In mode error_reporting(E_ALL) these two warning were raised (thanks to letscode)
+      
+version 1.0.4
+    - fix case sensitivity errors in the sample form app
+    - add class EHtml to wrap CHtml (simply extension usage) - replace CHtml:: with EHtml::
+      to enable client side validation. Note that a call to EHtml::endForm() does include the form
+      closing element.
+      
+version 1.0.3
+    New feature
+    ------------
+	- add support for the allowEmpty attribute attached to Yii built-in validators (sample
+	form10)
+	
+	Fix
+	---
+	- rename to lowercase sample demo controller and view folder to avoid case issue.
+	     
+version 1.0.2
+    New feature
+    ------------
+    - Add support for the NUMERICAL built-in Yii validator. All options are supported (integerOnly,
+    min, max, tooBig, tooSmall).
+    - add form9 to sample forms. This form illustrate the usage of the numerical validator.
+    
+    Fix
+    ---
+    - replace jquery.validate.pack.js with jquery.validate.min.js because of problems under IE6 that result in the 
+    javascript validation to not occur.
+    - when no rule can be applied on the client side, the JQuery Validate Plugin initialisation failed, causing a 
+    Javascript error to be raised.
+    - error message selection for rule compare
+    - remove message JS initialisation option if empty.
+    
+version 1.0.1
+	- add support for COMPARE Yii built-in validator. Both CompareAttribute and compareValue
+	are now supported.
+	- improve the in-line JS handlers for the JQuery Validate plugin options. Plugin options that begin
+	with 'function' are not JSonEncoded.
+	- add form8 to sample.
+
+version 1.0
+	- first version

@@ -1,0 +1,384 @@
+
+/**
+ * CSS styles for form and input fields.
+ *
+ * These styles are used with form and input fields generated via yiic script.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008-2009 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+*/
+
+/* FORM ELEMENTS*/
+
+div.srbacForm
+{
+  border: 1px solid #dfdfdf;
+  margin: 0;
+  padding: 5px;
+}
+
+div.srbacForm label.required
+{
+}
+
+div.srbacForm span.required
+{
+  color: red;
+}
+
+div.errorSummary
+{
+  border: 2px solid #C00;
+  padding: 7px 7px 12px 7px;
+  margin: 0 0 20px 0;
+  background: #FEE;
+}
+
+div.errorSummary p
+{
+  margin: 0;
+  padding: 5px;
+}
+
+div.errorSummary ul
+{
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+div.errorSummary ul li
+{
+  list-style: square;
+}
+
+div.srbacForm p.hint
+{
+  color: gray;
+  font-size: 90%;
+  margin: 0 0 0 110px;
+}
+
+div.srbacForm fieldset
+{
+  border: #DDD 1px solid;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+div.srbacForm legend
+{
+  font-weight: bold;
+}
+
+div.srbacForm label
+{
+}
+
+div.srbacForm div.action
+{
+  clear: left;
+  margin-left: 110px;
+  padding: 0.25em 0;
+}
+
+div.srbacForm div.simple,
+div.srbacForm div.complex
+{
+  clear: left;
+  padding: 0.25em 0;
+}
+
+div.srbacForm div.simple label,
+div.srbacForm div.complex span
+{
+  display: block;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  text-align: right;
+  width: 100px;
+}
+
+div.srbacForm label.error,
+div.srbacForm span.error
+{
+  color: #C00;
+}
+
+div.srbacForm input.error,
+div.srbacForm textarea.error,
+div.srbacForm select.error
+{
+  background: #FEE;
+  border-color: #C00;
+}
+
+div.srbacForm div.simple div,
+div.srbacForm div.complex div
+{
+  margin-left: 110px;
+}
+
+
+/* SRBAC ELEMENTS*/
+.iconSet {
+  border:#dddddd solid 1px;
+  background: #EBF4FB;
+  padding:0.4em;
+  -moz-border-radius:0.7em;
+  height:54px;
+}
+
+.iconBox a {
+  color:#222222;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+.controlPanel a {
+  color:#222222;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+.icon{
+  vertical-align:middle;
+  border:0;
+}
+
+.controlPanel{
+  background: #EBF4FB;
+  padding:0.4em;
+  -moz-border-radius:0.7em;
+  border:#dddddd solid 1px;
+}
+
+.marginBottom{
+  margin-bottom:0.5em;
+}
+
+.reset{
+/*
+  clear:both;
+*/
+}
+
+
+.srbacDataGrid {
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 99%;
+	margin: 0;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color:#FFFFFF;
+	border-color:#DFDFDF;
+}
+.srbacDataGrid .label {
+    width:120px;
+}
+.srbacDataGrid * {
+	word-wrap: break-word;
+}
+
+.srbacDataGrid a {
+	text-decoration: none;
+}
+
+.srbacDataGrid td,
+.srbacDataGrid th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-color:#DFDFDF;
+	vertical-align: text-top;
+	line-height:1.3em;
+	padding:7px 7px 8px;
+	text-align:left;
+}
+
+
+.srbacDataGrid thead tr th, .srbacDataGrid tfoot tr th, h3.dashboard-widget-title, h3.dashboard-widget-title span, h3.dashboard-widget-title small, .find-box-head {
+background:#DFDFDF url(../images/gray-grad.png) repeat-x scroll left top;
+color:#333333;
+}
+.srbacDataGrid th input {
+margin:0 0 0 8px;
+padding:0;
+vertical-align:text-top;
+}
+
+.controlPanel a{
+  margin-right:0.5em;
+}
+
+div.iconBox{
+  float:left;
+  padding:0.2em;
+  -moz-border-radius:0.7em;
+  margin:0.6em;
+  border:1px outset #666666;
+  background-color:white;
+}
+
+.iconBox:hover{
+  background-color:#EEEEEE;
+  cursor:pointer;
+}
+
+div.srbac
+{
+  border: 1px solid #DFDFDF;
+  background: #EBF4FB;
+  margin: 0;
+  padding: 5px;
+  width: 600px;
+}
+div.srbac .dropdown{
+  width: 180px;
+}
+
+div.srbac div.message{
+  color:red;
+  text-align:center;
+  font-weight:bold;
+}
+
+
+/* begin data grid style */
+table.srbacDataGrid
+{
+  background: white;
+  border-collapse: collapse;
+  width: 99%;
+}
+
+table.srbacDataGrid th, table.srbacDataGrid td
+{
+
+
+  padding: 0.5em;
+  text-align:left;
+}
+
+table.srbacDataGrid th
+{
+  background: #d3dfee;
+  text-align: center;
+}
+
+table.srbacDataGrid th.label
+{
+  width: 150px;
+}
+
+table.srbacDataGrid tr.odd
+{
+  background: #E6F2FF;
+}
+/* end of data grid style */
+
+div.error {
+  color:red;
+}
+
+div.title {
+
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+table.roles {
+  background:white;
+  width:100%;
+}
+
+table.tasks {
+
+  float:right;
+  width:75%;
+  vertical-align:top;
+  background-color: #66ffff;
+}
+
+table.operations {
+  float:right;
+  width:60%;
+  background-color: #9999ff;
+}
+
+/* TABVIEW ELEMENTS */
+.yiiTab ul.tabs
+{
+  padding: 2px 0;
+  margin: 0;
+  font: bold 12px Verdana, sans-serif;
+  text-align:left;
+}
+
+.yiiTab ul.tabs li
+{
+  list-style: none;
+  margin: 0;
+  display: inline;
+}
+
+.yiiTab ul.tabs a
+{
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+  padding: 2px 0.5em;
+  margin: 0 0 0 3px;
+  border: 1px solid #DFDFDF;
+  border-bottom: none;
+  background: #d3dfee;
+  text-decoration: none;
+}
+
+.yiiTab ul.tabs a:link
+{
+  color: #667;
+}
+
+.yiiTab ul.tabs a:visited
+{
+  color: #667;
+}
+
+.yiiTab ul.tabs a:hover
+{
+  color: #000;
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.yiiTab ul.tabs a.active
+{
+  background: white;
+  border-bottom: 1px solid white;
+}
+
+.yiiTab div.view
+{
+  border: 1px solid #DFDFDF;
+  padding: 8px;
+  margin: 0;
+}
+
+/* LOADING INDICATORS */
+div.srbacLoading {
+  background-position:  center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-image: url('process-working.gif');
+}
+div.srbacLoading * {
+  opacity: .2;
+}

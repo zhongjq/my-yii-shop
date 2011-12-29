@@ -1,0 +1,316 @@
+/**
+ * CSS styles for form and input fields.
+ *
+ * These styles are used with form and input fields generated via yiic script.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008-2009 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ */
+
+.errorSummary, .notice, .success {
+border:1px solid #DDDDDD;
+margin-bottom:1em;
+padding:0.8em;
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+
+}
+.errorSummary {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#E6EFC2 none repeat scroll 0 0;
+border-color:#C6D880;
+color:#264409;
+
+}
+
+.success {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:#FFF6BF none repeat scroll 0 0;
+    border-color:#FFD324;
+    color:#514721;
+}
+.errorSummary a {
+color:#8A1F11;
+}
+.notice a {
+color:#514721;
+}
+.success a {
+color:#264409;
+}
+
+div.yiiForm
+{
+
+}
+
+div.yiiForm label.required
+{
+}
+
+div.yiiForm span.required
+{
+	color: red;
+}
+
+
+div.errorSummary p
+{
+	margin: 0;
+	padding: 5px;
+}
+
+div.errorSummary ul
+{
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+div.errorSummary ul li
+{
+	list-style: square;
+}
+
+div.yiiForm p.hint
+{
+	color: gray;
+	margin: 0 0 0 110px;
+}
+
+div.yiiForm fieldset
+{
+	border: #DDD 1px solid;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+div.yiiForm legend
+{
+	font-weight: bold;
+}
+
+div.yiiForm label
+{
+}
+
+
+.simple,.complex
+{
+	clear: left;
+	padding: 0.25em 0;
+}
+
+div.simple label,
+div.complex span
+{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	text-align: right;
+	width: 100px;
+	height:22px;
+	line-height:22px
+}
+
+div.yiiForm label.error,
+div.yiiForm span.error
+{
+	color: #C00;
+}
+
+div.yiiForm input.error,
+div.yiiForm textarea.error,
+div.yiiForm select.error
+{
+
+background:#FBE6F2 none repeat scroll 0 0;
+border:1px solid #D893A1;
+
+}
+
+div.yiiForm div.simple div,
+div.yiiForm div.complex div
+{
+	margin-left: 110px;
+}
+
+.loginForm {
+	background:#EEF7FF none repeat scroll 0 0;
+}
+.loginForm .header {
+margin:0 0 5px;
+}
+.loginForm .ye_l_b {
+padding:8px 18px 12px;
+}
+
+
+.portlet div.simple label, .portlet div.complex span {
+display:block;
+float:left;
+margin-right:10px;
+position:relative;
+text-align:right;
+width:50px;
+}
+.portlet .action{
+clear:left;
+margin-left:55px;
+padding:0.25em 0;
+}
+
+.infobox {
+	display:block;
+	padding:10px;
+}
+.updata-advice {
+	width:400px;
+}
+.updates {
+color:#5F6C6C;
+}
+.updates p {
+margin-bottom:11px;
+}
+.updates p strong {
+color:#F79D21;
+font-size:13px;
+letter-spacing:1px;
+}
+.updates dl {
+margin-bottom:10px;
+
+}
+.updates dl dt {
+color:#7A8686;
+float:left;
+font-size:12px;
+font-weight:normal;
+line-height:12px;
+width:60px;
+height:24px;
+line-height:24px;
+}
+.updates dl dd {
+background:transparent none repeat scroll 0 0;
+float:left;
+line-height:12px;
+text-indent:0;
+width:330px;
+height:24px;
+line-height:24px;
+
+}
+.updates .advice a {
+border-top:1px solid #CEE1EE;
+display:block;
+font-size:13px;
+font-weight:bold;
+padding:14px 0 10px 22px;
+}
+
+#banner {
+width:685px;
+height:420px;
+overflow:hidden;
+position:relative;
+border-bottom:#A10000 3px solid;
+}
+#play_list img {
+border:0 none;
+
+}
+#play_info {
+color:#FFFFFF;
+cursor:pointer;
+height:42px;
+margin-top:141px;
+padding:8px 0 0 20px;
+position:absolute;
+width:222px;
+z-index:1001;
+}
+#play_info b {
+display:block;
+font-size:14px;
+}
+#play_bg {
+background-color:#000000;
+height:24px;
+margin:200px 0 0;
+opacity:0.3;
+position:absolute;
+width:325px;
+z-index:1000;
+}
+#play_text {
+bottom:20px;
+position:absolute;
+width:100%;
+z-index:1002;
+}
+#play_text ul {
+display:block;
+float:right;
+height:20px;
+padding-right:24px;
+}
+#play_text ul li {
+background-color:#FFFFFF;
+border:1px solid #FF7300;
+color:#FF7300;
+cursor:pointer;
+float:left;
+font-family:Arial;
+font-size:12px;
+height:16px;
+line-height:16px;
+margin:3px 1px;
+overflow:hidden;
+text-align:center;
+width:16px;
+}
+#play_text ul li.selected {
+background-color:#FF7300;
+border:0 none;
+color:#FFFFFF;
+font-size:16px;
+font-weight:bold;
+height:21px;
+line-height:21px;
+margin:0 1px;
+width:21px;
+}
+#play_list a {
+display:block;
+}
+
+
+.gotoreg {
+background:transparent url(../images/reg_btn.gif) repeat scroll 0 0;
+color:#005EAC;
+display:block;
+font-family:微软雅黑;
+font-size:18px;
+font-weight:700;
+height:35px;
+line-height:1.5em;
+margin:4px 0 0;
+padding:9px 0 0 55px;
+width:127px;
+}
+
+
+#primary {
+    float:left;
+    width:685px;
+}

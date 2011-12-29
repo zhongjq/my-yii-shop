@@ -1,0 +1,96 @@
+2011/12/28 12:00:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\website\yii-svn\framework\db\CDbConnection.php:364
+Stack trace:
+#0 D:\website\yii-svn\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 D:\website\yii-svn\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 D:\website\yii-svn\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(581): CModule->getComponent('db')
+#4 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(58): CDbAuthManager->getDbConnection()
+#5 D:\website\yii-svn\framework\base\CModule.php(372): CDbAuthManager->init()
+#6 D:\website\yii-svn\framework\web\CWebApplication.php(180): CModule->getComponent('authManager')
+#7 D:\website\yii-svn\framework\web\auth\CWebUser.php(776): CWebApplication->getAuthManager()
+#8 D:\website\yiicms\protected\admin\views\layouts\main.php(62): CWebUser->checkAccess('????????????')
+#9 D:\website\yii-svn\framework\web\CBaseController.php(119): require('D:\website\yiic...')
+#10 D:\website\yii-svn\framework\web\CBaseController.php(88): CBaseController->renderInternal('D:\website\yiic...', Array, true)
+#11 D:\website\yii-svn\framework\web\CController.php(781): CBaseController->renderFile('D:\website\yiic...', Array, true)
+#12 D:\website\yiicms\protected\admin\controllers\SiteController.php(46): CController->render('login', Array)
+#13 D:\website\yii-svn\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#14 D:\website\yii-svn\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#15 D:\website\yii-svn\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#16 D:\website\yii-svn\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('')
+#18 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('')
+#19 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#20 D:\website\yiicms\admin.php(11): CApplication->run()
+#21 {main} REQUEST_URI=/admin.php
+2011/12/28 12:01:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\website\yii-svn\framework\db\CDbConnection.php:364
+Stack trace:
+#0 D:\website\yii-svn\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 D:\website\yii-svn\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 D:\website\yii-svn\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(581): CModule->getComponent('db')
+#4 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(58): CDbAuthManager->getDbConnection()
+#5 D:\website\yii-svn\framework\base\CModule.php(372): CDbAuthManager->init()
+#6 D:\website\yii-svn\framework\web\CWebApplication.php(180): CModule->getComponent('authManager')
+#7 D:\website\yii-svn\framework\web\auth\CWebUser.php(776): CWebApplication->getAuthManager()
+#8 D:\website\yiicms\protected\admin\views\layouts\main.php(62): CWebUser->checkAccess('????????????')
+#9 D:\website\yii-svn\framework\web\CBaseController.php(119): require('D:\website\yiic...')
+#10 D:\website\yii-svn\framework\web\CBaseController.php(88): CBaseController->renderInternal('D:\website\yiic...', Array, true)
+#11 D:\website\yii-svn\framework\web\CController.php(781): CBaseController->renderFile('D:\website\yiic...', Array, true)
+#12 D:\website\yiicms\protected\admin\controllers\SiteController.php(46): CController->render('login', Array)
+#13 D:\website\yii-svn\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#14 D:\website\yii-svn\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#15 D:\website\yii-svn\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#16 D:\website\yii-svn\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('')
+#18 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('')
+#19 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#20 D:\website\yiicms\admin.php(11): CApplication->run()
+#21 {main} REQUEST_URI=/admin.php
+2011/12/28 12:01:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\website\yii-svn\framework\db\CDbConnection.php:364
+Stack trace:
+#0 D:\website\yii-svn\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 D:\website\yii-svn\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 D:\website\yii-svn\framework\base\CModule.php(372): CDbConnection->init()
+#3 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(581): CModule->getComponent('db')
+#4 D:\website\yii-svn\framework\web\auth\CDbAuthManager.php(58): CDbAuthManager->getDbConnection()
+#5 D:\website\yii-svn\framework\base\CModule.php(372): CDbAuthManager->init()
+#6 D:\website\yii-svn\framework\web\CWebApplication.php(180): CModule->getComponent('authManager')
+#7 D:\website\yii-svn\framework\web\auth\CWebUser.php(776): CWebApplication->getAuthManager()
+#8 D:\website\yiicms\protected\admin\views\layouts\main.php(62): CWebUser->checkAccess('????????????')
+#9 D:\website\yii-svn\framework\web\CBaseController.php(119): require('D:\website\yiic...')
+#10 D:\website\yii-svn\framework\web\CBaseController.php(88): CBaseController->renderInternal('D:\website\yiic...', Array, true)
+#11 D:\website\yii-svn\framework\web\CController.php(781): CBaseController->renderFile('D:\website\yiic...', Array, true)
+#12 D:\website\yiicms\protected\admin\controllers\SiteController.php(46): CController->render('login', Array)
+#13 D:\website\yii-svn\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#14 D:\website\yii-svn\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#15 D:\website\yii-svn\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#16 D:\website\yii-svn\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('')
+#18 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('')
+#19 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#20 D:\website\yiicms\admin.php(11): CApplication->run()
+#21 {main} REQUEST_URI=/admin.php
+2011/12/28 12:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "srbac.css" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('srbac.css')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('srbac.css')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css
+2011/12/28 12:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "srbac.css" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('srbac.css')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('srbac.css')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css
+2011/12/28 12:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "srbac.css" 动作.' in D:\website\yii-svn\framework\web\CController.php:477
+Stack trace:
+#0 D:\website\yii-svn\framework\web\CController.php(262): CController->missingAction('srbac.css')
+#1 D:\website\yii-svn\framework\web\CWebApplication.php(277): CController->run('srbac.css')
+#2 D:\website\yii-svn\framework\web\CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 D:\website\yiicms\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css

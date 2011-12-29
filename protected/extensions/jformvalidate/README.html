@@ -1,0 +1,364 @@
+<!DOCTYPE ht
+ml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>jformvalidate : a Yii extension</title>
+<style type="text/css">
+	body {
+		font-family:"Verdana";
+		font-size:0.9em;
+	}
+	#page {
+    	margin-left: auto;
+   		margin-right: auto;
+		width:750px;
+	}	
+	#page h2,
+	#page h3 {
+		font-family:"Trebuchet MS"; 
+		color:#404040;
+		border-bottom:4px solid #ecf5ff;
+	}
+	#page h3 {
+		border-bottom:0px;
+	}
+	#index {
+		float:right;
+		
+		width:18em;
+		border:1px solid #f4f4ff;
+		background-color:#e1e1e3;
+		padding-top:1em;
+		margin-top:50px;
+	}
+	#index li a:hover {
+		background-color:white;
+	}
+	#header h1{
+		font-size:2.4em;
+		color:#17297d;
+	}
+	#header em {
+		position:relative;
+		top:-20px;
+		color:#9393ff;
+	}
+	pre {
+		color:#0080ff;
+		background-color:#f4f4ff;
+	}
+	p.license{
+		color:#222222;
+		background-color:#eeeeee;
+		font-family:Courier;
+	}
+	a.api {
+		font-style:italic;
+	}
+	div#zipContent ul {
+		list-style-type:circle;
+		font-family:Courier;
+	}
+</style>
+</head>
+<body>
+	<div id="page">
+		<div id="index">
+			<ol>
+				<li><a href="#presentation">Presentation</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#quickstart">Quickstart</a></li>
+				<li><a href="#how">How does it work ?</a></li>
+				<li><a href="#limitations">Limitations</a></li>
+				<li><a href="#using">Using a JS validator</a></li>
+				<li><a href="#ajaxsub">Ajax submition</a></li>
+				<li><a href="#error">Error messages</a></li>
+				<li><a href="#api">API Description</a></li>
+				<li><a href="#license">License</a></li>
+			</ol>			
+		</div>
+		<div id="header">
+			<h1>JFormValidate</h1>
+			<em>Javascript Form Validate : a Yii Extension</em>
+			<p>version 1.0.8</p>
+		</div>
+		
+		
+		
+<h2><a name"presentation">Presentation</a></h2>
+<p>JFormValidate is a Yii extension dedicated to provide <b>J</b>avascript <b>F</b>orm <b>V</b>alidation feature, for the Yii framework. This extension relies on an existing
+JQuery plugin that provides all the logic and functionnalities for the actual Form validation. It is a powerful plugin, with plenty of intresting features
+that are described in its <a href="http://docs.jquery.com/Plugins/Validation" title="Validate JQuery plugin">official documentation</a>. </p>
+
+
+
+
+<h2>Requirements</h2>
+<ul>
+	<li>Yii framework 1.0.6 or above. </li>
+</ul>
+<strong>Please note that this extension does not support Yii 1.1 branch</strong>
+<h2><a name="installation">Installation</a></h2>
+<p>The released archive contains following files :
+<div id="zipContent">
+	<ul>
+		<li>
+			<b>jformvalidate-1.0.8</b>
+			<ul>
+				<li><b>extensions</b> : the JFormValidate Yii extension itself including its dependencies. Note that the
+				JQuery Validate Plugin is provided in this release.</li>
+				<li><b>sampleApp</b> : this folder contains a set of files that can be added to a skeleton
+				Yii app in order to demonstrate some functionalities of the JFormValidate extension.
+					<ul>
+						<li><b>controllers</b> : JsvformController controller</li>
+						<li><b>models</b> : TestForm model, derived from CFormModel</li>
+						<li><b>views</b>
+							<ul>
+								<li><b>jsvform</b> : this folder contains a set of view built from the
+								TestForm model and aim to illustrate some aspects of the JFormValidate extension</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</p>
+<h3>Install the extension in an existing webApp</h3>
+<ol>
+	<li>copy the content of the <i>jformvalidate-1.0.8/extensions</i> folder into <i>yourwebApp/protected/extensions</i></li>
+	<li>Declare and initialize the new component in your application's configuration file.
+	<pre>
+    'jformvalidate' => array (
+    	'class' => 'application.extensions.jformvalidate.EJFValidate'
+    ),</pre>
+	</li>
+</ol>	
+<p>Now, the extension will be loaded the first time it is needed, but of course it is also possible to add it
+to the <i>preload</i> sequence. For more information on extensions, please refer to the 
+<a href="http://www.yiiframework.com/doc/guide/extension.use#application-component" title="using extensions">Yii Documentation.</a>  </p>
+<h3>Install samples</h3>
+<p>
+	<ul>
+		<li>Starting from a fresh Yii skeleton application, copy the content of  <i>jformvalidate-1.0.8/sampleApp</i>
+		into <i>yourApp</i> main folder.</li>
+		<li>in your favorite browser access to <i>http://yourdomain/yourApp/index.php?<b>r=Jsvform/TestForm</b></i></li>
+	</ul>
+	You can now tests some features with the different forms provided as sample.
+</p>
+
+<h2><a name="quickstart">Quickstart</a></h2>
+<p>Ok, let's see it in action ! For this first example, and assuming that the extension is correctly installed, we'll add Javascript validation 
+to the Contact form that is automatically created with Yii default application.<br/>
+This only requires to modify the corresponding view file, as describes below :</p>
+<ol>
+	<li>edit the view file <em>contact.php</em>, located inside <em>protected/views/site/</em></li>
+	<li>at the begining of the file, replace<br/>
+	<pre>&lt;?php echo CHtml::form(); ?&gt;</pre>
+	with
+	<pre>
+&lt?php
+      $JFV=Yii::app()->jformvalidate; // creates and initialize the component
+      echo $JFV->form();              // creates the opening form element and initiate
+                                      // JS validation
+?&gt;</pre>
+	</li>
+	<li>replace all calls to <i>CHtml::activeTextField()</i> and <i>CHtml::activeTextArea()</i> with calls to
+	<i>$JFV->activeTextField()</i> and <i>$JFV->activeTextArea()</i>.
+	</li>
+	<li>just before the closing FORM element, insert 
+		<pre>&lt;?php echo $JFV->endForm(); ?&gt;</pre>
+	</li>
+</ol>
+<p>That's it ! The contact form is now validated on the client side, according to the rules defined by the corresponding Yii model. Of course
+there are some configuration and CSS to set up in order to get a nice design, but the form validation is up and ready.</p>
+<h3>Alternate usage</h3>
+ <p>Since version 1.0.4, the extension provides a new class calls EHtml, that is dedicated to wraps all calls to the Yii html helper
+ class CHtml. Using this EHtml class makes javascript form validation even more easy. To use it, first, import the classe in the main configuration file:
+ </p>
+ <pre>
+'import'=>array(
+	...
+	'application.extensions.jformvalidate.EHtml',
+	...
+) 	
+ </pre>
+ <p>Once this is done, you can just replace all calls to CHtml static methods with EHtml calls, and javascript validation will be automatically
+ enabled.<br/>For instance :</p>
+ <pre>
+&lt;div class=&quot;simple&quot;&gt;
+	&lt;?php echo EHtml::activeLabel($model,'username'); ?&gt;
+	&lt;?php echo EHtml::activeTextField($model,'username') ?&gt;
+&lt;/div&gt; 	
+ </pre>
+ <p>Remember to call EHtml::endForm() to include the closing form element and insert Javascript initialisation code for validation.<br/>
+ For more informatio, check testForm11 provided with the sample application.</p>
+
+<h2><a name="how">How does it work ?</a></h2>
+<p>The JFormValidate extension wraps some helper static methods from the <a href="http://www.yiiframework.com/doc/api/CHtml" class="api" title="Yii class reference">CHtml</a> Yii core class, and by doing so, collects information
+ on the form that is being built. When the <i>endForm()</i> method is invoked, all this information is used to generate a javascript initialisation object 
+ for the JQuery Plugin validation. Therefore, this extension can be considered as some sort of adaptater/converter between validation rules defined by
+ a Yii model, and validation rules implemented by the JQuery Validate plugin.</p>
+ 
+  <h2><a name="limitations">Limitations</a></h2>
+ <p>
+ 	Please note that method and class based validators are not supported by this extension, as it is not possible to <i>automatically</i>
+	produce a JS code from a specific piece of PHP code (if you know how to do it, be my guess).
+ </p>
+ <p>In this version, the following set of Yii built-in validators is supported :
+ <ul>
+ 	<li>required</li>
+	<li>length : min, max or both</li>
+	<li>email</li>
+	<li>url</li>
+	<li>compare : with another attribute (compareAttribute) or a constant value (compareValue)</li>
+	<li>numerical : with options <i>integerOnly, min, max, tooBig, tooSmall</i></li>
+	<li>match : note that pattern modifiers are not supported, except for /i <em>(see form15 from sample)</em></li>
+ </ul>
+ Consequently, if you use another rule in your model, it will not be tested on the client-side. In a near future
+ more rules will be added, but until then, a client-side validating method will have to be added manually. 
+ </p>
+ <h2><a name="using">using a JS validator</a></h2>
+ <p>
+ 	If you need to validate user inputs on the client side, with a rule that is not (yet) implemented by this extension
+	you can do so, by using the <i>pseudo validator</i> provided with the extension.<br/>
+	This validator is a standard Yii validator class (it inherits from <a href="http://www.yiiframework.com/doc/api/CValidator">CValidator</a>) but it is describes as <i>pseudo</i>	
+	because its only goal is to wrap calls to Javascript validators which are part of the underlying JQuery plugin. 
+	Therefore, when the pseudo validator is called by the Yii framework to validate an attribute, it <b>always return true</b>.
+ </p>
+ <p>
+ 	Let's take a look at an example. The JQuery Plugin has a validator rule called <a href="http://docs.jquery.com/Plugins/Validation/Methods/remote#options" title="view documentation">remote</a> which
+	is used to validate a user entry through an ajax call to the server. So, let's say we want the user to enter his/her email, and that this email must not be already in use (this 
+	rule is equivalent of the Yii unique rule). The initialisation value for the remote validator, is the url that is in charge of testing email unicity. <br/>
+	In the model, we add the following rule :
+	<pre>
+array('custom1', 'application.extensions.jquery-form-validator.ECustomJsValidator',
+	'rules'    => array(
+		'remote' => 'index.php?r=Jsvform/remoteValidate'
+	),
+	'messages' => array(
+		'remote' => '{attribute} already registred'
+	)
+),</pre>
+  ..and that's it. Ok, you have to add the <b>actionRemoteValidate()</b> method to the <i>JsvformController</i>, but that's an easy task.
+  <br/><i>(sample form7 provided with this release implements this example)</i>
+ </p>
+ <p>
+ 	As you can see in the example above, the <b>ECustomJsValidator</b> class accepts a rule and a messages parameters, as described by the JQuery Plugin
+	 documentation.
+ </p>
+ 
+  <h2><a name="ajaxsub">Ajax submition</a></h2>
+ <p>
+ 	Implementing ajax submition with client-side validation is simple, as it doesn't require anything else
+	than what is required by Yii ! A call to EHtml::ajaxSubmitButton() is enough to inform the Extension that 
+	ajax submition is needed. When this function is invoked, the JFormValidate extension will handle javascript 
+	creation and event handler registration instead of Yii.<br/>
+	For a complete example, take a look at sample form13 and form14.
+ </p>
+ 
+ <h2><a name="error">Error messages</a></h2>
+ <p>In case an input field is not valid on the client-side, an error message is displayed. This error message comes from :
+ 	<ol>
+ 		<li>the message parameter from the rule, as it is defined in the model</li>
+		<li>when a Yii built-in validator is used, and no message is set as rule parameter, the default error message is used</li>
+		<li>when a client-side-only validator is used, then a message defined in the javascript source code is displayed</li>
+ 	</ol>
+	You may also note that in the two first cases, the special placeholder {attribute} will be replaced by the name or the label of the attribute whose
+	validation failed.
+ </p>
+ 
+ 
+ 
+ 
+ <h2><a name="api">API Description</a></h2>
+ <h3>Initialisation</h3>
+<p>In the configuration file, it is possible to set some initialization parameters.
+<ul>
+	<li><b>pluginOptions</b> : this option should contains an array off options that will be passed with no
+	change, to the JQuery Plugin. For more information on these options, please refere to the 
+	<a href="http://docs.jquery.com/Plugins/Validation/validate#toptions">"Options for the validate() method"</a> page.</li>
+	<li><b>enable</b> : (boolean) - this option can be used to quickly disable all client-side validation handled by this extension.</li>
+</ul>
+</p>
+	<h3>Public Methods</h3>
+ <p>In this version of the extension, only a reduced set of the Yii CHtml helpers methods have been wraped. 
+ <ul>
+ 	<li>form element
+		<ul>
+			<li>form and beginForm</li>
+			<li>endForm</li>
+		</ul>
+	</li>
+	<li>form construction
+		<ul>
+		 	<li>activeCheckBox</li>
+			<li>activeCheckBoxList</li>
+			<li>activeDropDownList</li>
+			<li>activeListBox</li>
+			<li>activePasswordField</li>
+			<li>activeRadioButtonList</li>
+			<li>activeTextArea</li>
+			<li>activeTextField</li>
+			<li>ajaxSubmitButton</li>				
+		</ul>		
+	</li>
+ </ul> 	
+ </p>
+ <p>The JFormValidate extension provides also specific methods to perform specific tasks.
+ 	<ul>
+ 		<li><b>setOptions(<i>array</i>)</b> : the arrays passed as argument should contain options that will be 
+		passed to the JQuery Plugin (<i>see pluginOptions above</i>).These options will override the ones defined
+		by the application configuration, providing you with more flexibility.</li>
+		<li><b>setScenario(<i>string</i>)</b> : use this method in the view where your form is built so to set the
+		name of the Yii scenario.The JFormValidate extension will use this name to select rules that
+		apply to this scenario only.</li>
+		<li><b>endForm()</b> : this is the method that produces the javascript initialisation code for the JQuery Validate plugin. If you
+		don't invoke this method, no javascript validation will occur. This method returns the form closing element "&lt;/form&gt;"<br/>
+		<em>Since Yii version 1.0.5, this method has been added to CHtml helper class</em></li>
+ 	</ul> 	
+ </p>
+ <h3>Overloading the submit handler</h3>
+ <p>
+ 	The JQuery Validate plugin allows to overload the submit default handler (<a href="http://docs.jquery.com/Plugins/Validation/validate#options">see related documentation</a>).
+	If you choose to do so, you must include a call to <b>$.fn.EJFValidate.restoreName(</b>) in your own submit hanlder. This javascript function is provided with the extension because a call to some CHtml
+	helpers method, generates HTML input elements with duplicated names. The problem is that the JQuery Validate Plugin works with input elements names, and duplicates name
+	are not welcomed. The Extension will temporary remove duplicate name, and they must be restores before form submition. That's what the <b>restoreName</b> javascript
+	function does.
+	Below is an example of how is it possible to overload the submit handler :
+	<pre>
+&lt;?php	
+$CS=Yii::app()->jformvalidate;
+echo $CS->form(); 
+
+$CS->setOptions(array(
+	
+	// ... put other options here ...
+		
+	'submitHandler' => 'function(form){
+		$.fn.EJFValidate.restoreName();
+		alert("submting the form");
+	}'
+));
+?&gt;
+</pre>
+	Check the sample form7 and form8 for live examples.	
+ </p>
+ <p>Note that starting from version 1.0.4, all customizable hanlders available in the JQuery Validate Plugin options, can 
+ be overloaded with the same principle. This can be done at the form level (like in the example above) and of course at the 
+ configuration level, in your application configuration file, when declaring the <b>EJFValidate</b> extension.
+ </p>
+ <h3><a name="license">License</a></h3>
+ <p class="license"> 	
+Copyright (c) 2009 by Raoul All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+<br/>
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of Raoul nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/><br/>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE</p>
+	</div><!-- end #page -->
+</body>
+</html>

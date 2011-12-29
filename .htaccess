@@ -1,0 +1,23 @@
+# Remove # in the following line if your web hoster is UD Media GmbH
+#AddHandler php5-fastcgi .php
+
+Options -Indexes
+
+# Turn on URL rewriting
+RewriteEngine On
+
+# Do not enable rewriting for files that exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} admin.*
+
+# Rewrite to admin.php/URL
+RewriteRule admin/(.*) admin.php/$1 [PT,L]
+
+
+# Do not enable rewriting for files that exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite to index.php/URL
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
