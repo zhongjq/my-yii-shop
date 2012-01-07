@@ -1,6 +1,6 @@
 <?php
 
-class ProductController extends CController
+class ProductController extends Controller
 {
 
 	const PAGE_SIZE=16;
@@ -14,7 +14,7 @@ class ProductController extends CController
 	{
 		$criteria=new CDbCriteria;
 
-		$this->title = 'Products     * Select your favorite theme from the products catalogue at left.';
+		$this->title = 'Products * Select your favorite theme from the products catalogue at left.';
 
 		$view = 'index';
 

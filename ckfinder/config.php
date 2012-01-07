@@ -27,7 +27,7 @@ function CheckAuthentication()
 	// return isset($_SESSION['IsAuthorized']) && $_SESSION['IsAuthorized'];
 	//... where $_SESSION['IsAuthorized'] is set to "true" as soon as the
 	//user logs in your system.
-	$yii=dirname(dirname(__FILE__)).'/../yii1.1/framework/yii.php';
+	$yii=dirname(dirname(__FILE__)).'/../yii/framework/yii.php';
 	$config=dirname(dirname(__FILE__)).'/protected/admin/config/main.php';
 	require_once($yii);
 	Yii::createWebApplication($config);

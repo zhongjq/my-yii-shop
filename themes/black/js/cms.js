@@ -1,5 +1,6 @@
  $(function (){
  	picAuto(4000);
+ 	
 	var t = setInterval('AutoScroll("#scrollDiv")',1500);
 
 	$('#scrollDiv').hover(
@@ -12,7 +13,6 @@
 	);
 	var screenHeight = window.screen.availHeight;
 	var showheight = $("#sidebar").width();
-	alert(windowsWidth);
 });
 
 //首页轮播图片

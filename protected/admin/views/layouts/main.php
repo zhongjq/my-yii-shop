@@ -88,12 +88,13 @@
 				}
 			}	
 		}
+		//CVarDumper::dump('fdsfdas');exit;
 		if(Yii::app()->user->checkAccess('信息中心管理'))
 		{
 			$root = tree::model()->findByPK(3);
 			$arr = $root->getChildNodes();
 			$data['content']['text'] = $root->name;
-		
+		    
 			if(!empty($arr))
 			{
 				foreach($arr as $node)
@@ -106,7 +107,7 @@
 		if(Yii::app()->user->checkAccess('产品管理'))
 		{
 			$data['product'] = array(
-				"text"=> "产品中心",
+				"text"=> "华科产品",
 				"expanded"=> true,
 				"classes" => "important",
 				'icon' => 'report',
@@ -123,6 +124,20 @@
 				),
 			);
 		}
+		$data['jobs'] = array(
+			"text"=> "人力资源",
+			"expanded"=> true,
+			"classes" => "important",
+			'icon' => 'report',
+			"children" => array(
+				0 => array(
+					'text'=> CHtml::link('列表',array('/jobs/')),
+				),
+				1 => array(
+					'text'=> CHtml::link('添加',array('/jobs/create')),
+				),
+			),
+		);
 		if(Yii::app()->user->checkAccess('广告管理'))
 		{
 		

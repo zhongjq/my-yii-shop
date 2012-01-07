@@ -1,6 +1,6 @@
 <?php
 
-class ContentController extends CController
+class ContentController extends Controller
 {
 
     public $cate_id = 11;

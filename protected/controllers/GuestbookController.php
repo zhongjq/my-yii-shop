@@ -1,6 +1,6 @@
 <?php
 
-class GuestbookController extends CController
+class GuestbookController extends Controller
 {
 
 	const PAGE_SIZE=10;

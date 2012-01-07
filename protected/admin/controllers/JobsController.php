@@ -179,10 +179,11 @@ class JobsController extends BaseController
 	 */
 	public function loadjobs($id=null)
 	{
-		if($this->_model===null)
+	    if($this->_model===null)
 		{
-			if($id!==null || isset($_GET['id']))
-				$this->_model=jobs::model()->findbyPk($id!==null ? $id : $_GET['id']);
+			if($id!==null || isset($_GET['id'])){
+				$this->_model=jobs::model()->findByPk($id!=null ? $id : $_GET['id']);
+			}
 			if($this->_model===null)
 				throw new CHttpException(404,'The requested page does not exist.');
 		}

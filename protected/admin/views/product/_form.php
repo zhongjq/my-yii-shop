@@ -1,5 +1,4 @@
 <div class="yiiForm">
-
 <p>
 带 <span class="required">*</span> 的项目为必填
 </p>

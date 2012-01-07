@@ -1,6 +1,6 @@
 <?php
 
-class NoticeController extends CController
+class NoticeController extends Controller
 {
 
 	const PAGE_SIZE=16;
@@ -14,7 +14,7 @@ class NoticeController extends CController
 	{
 
 		$criteria=new CDbCriteria;
-		$this->title = 'News';
+		$this->title = '新闻中心';
 
 		if(!empty($_GET['cate_id']))
 		{

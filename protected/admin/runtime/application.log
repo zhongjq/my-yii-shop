@@ -94,3 +94,233 @@ Stack trace:
 #3 D:\website\yii-svn\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #4 D:\website\yiicms\admin.php(11): CApplication->run()
 #5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css
+2012/01/04 22:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "srbac.css" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('srbac.css')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('srbac.css')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css
+2012/01/05 22:47:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "job"。' in E:\website\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('job')
+#1 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 E:\website\huake\admin.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/admin.php/job
+2012/01/05 22:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "job"。' in E:\website\yii\framework\web\CWebApplication.php:281
+Stack trace:
+#0 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('job')
+#1 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 E:\website\huake\admin.php(11): CApplication->run()
+#3 {main} REQUEST_URI=/admin.php/job
+2012/01/05 22:50:09 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=
+2012/01/05 22:50:48 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '0', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('0')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=0
+2012/01/05 22:51:18 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '1', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('1')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=1
+2012/01/05 22:54:04 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '1', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('1')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=1
+2012/01/05 22:54:14 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '1', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('1')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=1
+2012/01/05 22:54:45 [error] [exception.CDbException] exception 'CDbException' with message '列名必须是一个字符串或者数组' in E:\website\yii\framework\db\schema\CDbCommandBuilder.php:701
+Stack trace:
+#0 E:\website\yii\framework\db\schema\CDbCommandBuilder.php(496): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 E:\website\yii\framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '1', '', Array, '`t`.')
+#2 E:\website\huake\protected\admin\controllers\JobsController.php(185): CActiveRecord->findByPk('1')
+#3 E:\website\huake\protected\admin\controllers\JobsController.php(62): JobsController->loadjobs()
+#4 E:\website\yii\framework\web\actions\CInlineAction.php(50): JobsController->actionShow()
+#5 E:\website\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 E:\website\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 E:\website\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 E:\website\yii\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#9 E:\website\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 E:\website\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 E:\website\yii\framework\web\CController.php(283): CFilterChain->run()
+#12 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('show')
+#14 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('jobs/show')
+#15 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 E:\website\huake\admin.php(11): CApplication->run()
+#17 {main} REQUEST_URI=/admin.php/jobs/show?id=1
+2012/01/05 22:56:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "srbac.css" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('srbac.css')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('srbac.css')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/srbac/authitem/srbac.css
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderMiddleLeft.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderTopCenter.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderBottomCenter.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderBottomRight.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderTopLeft.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderTopRight.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderBottomLeft.png
+2012/01/05 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "images" 动作.' in E:\website\yii\framework\web\CController.php:477
+Stack trace:
+#0 E:\website\yii\framework\web\CController.php(262): CController->missingAction('images')
+#1 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('images')
+#2 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('tree/images/int...')
+#3 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 E:\website\huake\admin.php(11): CApplication->run()
+#5 {main} REQUEST_URI=/admin.php/tree/images/internet_explorer/borderMiddleRight.png
+2012/01/06 22:30:57 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "E:\website\huake\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in E:\website\yii\framework\web\CAssetManager.php:112
+Stack trace:
+#0 E:\website\yii\framework\web\CAssetManager.php(97): CAssetManager->setBasePath('E:\website\huak...')
+#1 E:\website\yii\framework\web\CAssetManager.php(207): CAssetManager->getBasePath()
+#2 E:\website\huake\protected\modules\srbac\SrbacModule.php(69): CAssetManager->publish('E:\website\huak...')
+#3 E:\website\yii\framework\base\CModule.php(73): SrbacModule->init()
+#4 E:\website\yii\framework\YiiBase.php(211): CModule->__construct('srbac', NULL, Array)
+#5 E:\website\yii\framework\base\CModule.php(266): YiiBase::createComponent('srbac.SrbacModu...', 'srbac', NULL, Array)
+#6 E:\website\huake\protected\modules\srbac\controllers\SBaseController.php(76): CModule->getModule('srbac')
+#7 E:\website\huake\protected\modules\srbac\controllers\SBaseController.php(43): SBaseController->allowedAccess()
+#8 E:\website\yii\framework\web\CController.php(298): SBaseController->beforeAction(Object(CInlineAction))
+#9 E:\website\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#10 E:\website\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\website\yii\framework\web\CWebApplication.php(277): CController->run('update')
+#12 E:\website\yii\framework\web\CWebApplication.php(136): CWebApplication->runController('product/update')
+#13 E:\website\yii\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#14 E:\website\huake\admin.php(11): CApplication->run()
+#15 {main} REQUEST_URI=/admin.php/product/update?id=80

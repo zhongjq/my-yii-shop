@@ -11,7 +11,7 @@ return array(
 	'sourceLanguage'=>'zh_cn',
 	'timeZone' => 'Asia/Shanghai',	
 	//'layout'=>'old',
-	'theme'=>'school',
+	'theme'=>'black',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -51,7 +51,7 @@ return array(
 			// uncomment the following to use MySQL as database
 			'connectionString'=>'mysql:host=127.0.0.1;dbname=yiicms',
 			'username'=>'root',
-			'password'=>'sa',
+			'password'=>'',
 			'charset'=>'utf8',
 
 			'schemaCachingDuration'=>3600,

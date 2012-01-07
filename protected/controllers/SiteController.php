@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends CController
+class SiteController extends Controller
 {
 
 	public function actions()
@@ -13,6 +13,9 @@ class SiteController extends CController
 
 				'maxLength'=>'4',
 				'minLength'=>'4',
+			),
+			'page'=>array(
+				'class'=>'CViewAction',
 			),
 		);
 	}

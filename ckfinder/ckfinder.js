@@ -331,7 +331,7 @@ CKFinder.SetupCKEditor = function( editorObj, basePath, imageType, flashType )
 	}
 
 	var ckfinder ;
-
+	
 	if ( basePath != null && typeof( basePath ) == 'object' )
 	{
 		ckfinder = new CKFinder( ) ;

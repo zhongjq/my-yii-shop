@@ -31,48 +31,62 @@ class MainSidebar extends CWidget
 
 		if($controller->id == 'content')
 		{
-			switch($action->id)
-				{
-					case 'about':$cate_id = 11;break;
-					case 'education':$cate_id = 13;break;
-					case 'honor':$cate_id = 12;break;
-				}
-			$tree = tree::model()->findByPK($cate_id);
+			switch($action->id){
+				case 'about':$cate_id = 11;break;
+				case 'education':$cate_id = 13;break;
+				case 'honor':$cate_id = 12;break;
+			}
 			
 			
-			$message .= '<dt>'.CHtml::encode($tree->name,array('/about','id'=>$tree->id)).'</dt>';
-
+			
+			$message .= '<dt>'.CHtml::encode($root->name).'</dt>';
+			$content = content::model()->findAll($criteria);
+			$message .= '<dd'.$class_name.'>'.CHtml::link('集团简介', array('/site/page','view'=>'intro')).'</dd>';
+			$message .= '<dd'.$class_name.'>'.CHtml::link('董事长致辞', array('/site/page','view'=>'intro')).'</dd>';
+			$message .= '<dd'.$class_name.'>'.CHtml::link('华科之路', array('/site/page','view'=>'intro')).'</dd>';
+			$message .= '<dd'.$class_name.'>'.CHtml::link('发展战略', array('/site/page','view'=>'intro')).'</dd>';
+			$message .= '<dd'.$class_name.'>'.CHtml::link('经营理念', array('/site/page','view'=>'intro')).'</dd>';
+			$message .= '<dd'.$class_name.'>'.CHtml::link('社会责任', array('/site/page','view'=>'intro')).'</dd>';
+/*            $root = tree::model()->findByPK($cate_id);
 			$criteria=new CDbCriteria;
 			$criteria->condition = "cate_id = $cate_id";
-			$criteria->order = "sort desc";
-			$content = content::model()->findAll($criteria);
-			
-
-
-
-					
-			foreach($content as $tree)
+			$criteria->order = "sort desc";*/
+/*			foreach($content as $tree)
 			{
 				$class_name = $tree->id == $_GET['id'] ? ' class = "show"' : '';
 				$message .= '<dd'.$class_name.'>'.CHtml::link($tree->title,array('/content/'.$action->id,'id'=>$tree->id)).'</dd>';
+			}*/
+			$message = '<dl>'.$message.'</dl>';
+		}elseif ($controller->id == 'product'){
+		    
+		    $cate_id = 4;
+			$root = tree::model()->findByPK($cate_id);
+			$message .= '<dt>'.CHtml::encode($root->name).'</dt>';
+		    
+			$criteria=new CDbCriteria;
+			$criteria->order = "sort desc";
+		    $products = product::model()->findAll($criteria);
+			foreach($products as $tree){
+				$class_name = $tree->id == $_GET['id'] ? ' class = "show"' : '';
+				$message .= '<dd'.$class_name.'>'.CHtml::link($tree->title,array('/product/'.$action->id,'id'=>$tree->id)).'</dd>';
 			}
-			$message = '<h3>Category</h3><dl>'.$message.'</dl>';
+			$message = '<dl>'.$message.'</dl>';
 		}
 		else
 		{
 			if($controller->id == 'notice')
 			{
 				$cate_id = Yii::app()->request->getParam('cate_id') ? Yii::app()->request->getParam('cate_id') : 2;
-				$cate_type = 'News Category';
+				$cate_id =  2;
 			}
 			else
 			{
 				$cate_id = Yii::app()->request->getParam('cate_id') ? Yii::app()->request->getParam('cate_id') : 4;
-				$cate_type = 'Products Category';
 			}
+			
 
 			$root = tree::model()->findByPK($cate_id);
-
+            $message .= '<dt>'.CHtml::encode($root->name).'</dt>';
 
 			if($root->level == 3)
 			{
@@ -81,11 +95,12 @@ class MainSidebar extends CWidget
 			
 			
 			$tree2 = $root->getTree();
+			
 			foreach($tree2 as $key => $subtree)
 			{
 				$message .= $this->printNestedTree($subtree);
 			}
-			$message = '<h3>'.$cate_type.'</h3><dl>'.$message.'</dl>';
+			$message = '<dl>'.$message.'</dl>';
 		}
 
 		echo $message;
@@ -112,11 +127,11 @@ class MainSidebar extends CWidget
 
 		if($tree->level == '2')
 		{
-			$data = '<dt'.$class_name.'>'.CHtml::link($tree->name,array($url,'cate_id'=>$tree->id)).'</dt>';
+			$data = '<dd'.$class_name.'>'.CHtml::link($tree->name,array($url,'cate_id'=>$tree->id)).'</dd>';
 		}
 		elseif($tree->level == '3')
 		{
-			$data = '<dd'.$class_name.'>'.CHtml::link($tree->name,array($url,'cate_id'=>$tree->id)).'</dd>';
+		    $data = '<dd'.$class_name.'>'.CHtml::link($tree->name,array($url,'cate_id'=>$tree->id)).'</dd>';
 		}
 		return $data;
 	}
