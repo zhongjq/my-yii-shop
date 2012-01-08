@@ -120,7 +120,12 @@ return array(
 			'class'=>'CDbConnection',
 			//'connectionString'=>'sqlite:'.$backend.'/../data/cms.db',
 			// uncomment the following to use MySQL as database
-			'connectionString'=>'mysql:host=127.0.0.1;dbname=yiicms',
+/*			'class'=>'application.extensions.PHPPDO.CPdoDbConnection',
+      		'pdoClass' => 'PHPPDO',
+			'connectionString'=>'mysql:host=dns.e6.dns-dns.net;dbname=sq_kuaihong001',
+			'username'=>'sq_kuaihong001',
+			'password'=>'000000',*/
+			'connectionString'=>'mysql:host=localhost;dbname=yiicms',
 			'username'=>'root',
 			'password'=>'',
 			'charset'=>'utf8',
@@ -160,9 +165,9 @@ return array(
 			'showScriptName'=>true,
 			'rules'=>array(
 				//'<controller:\w+>'=>'<controller>/list',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',Z
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-		),		
+		),
 
 	),
 

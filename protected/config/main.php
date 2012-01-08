@@ -24,6 +24,16 @@ return array(
 		'application.extensions.nestedset.*',
 	),
 
+	'modules'=>array(
+		// uncomment the following to enable the Gii tool
+		
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>'sa',
+		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters'=>array('127.0.0.1','::1'),
+		),
+	),
 	// application components
 	'components'=>array(
 		'log'=>array(
@@ -49,7 +59,9 @@ return array(
 			'class'=>'CDbConnection',
 			//'connectionString'=>'sqlite:'.dirname(__FILE__).'/../data/cms.db',
 			// uncomment the following to use MySQL as database
-			'connectionString'=>'mysql:host=127.0.0.1;dbname=yiicms',
+			//'class'=>'application.extensions.PHPPDO.CPdoDbConnection',
+      		//'pdoClass' => 'PHPPDO',
+			'connectionString'=>'mysql:host=localhost;dbname=yiicms',
 			'username'=>'root',
 			'password'=>'',
 			'charset'=>'utf8',
@@ -63,7 +75,7 @@ return array(
         ),
         'urlManager'=>array(
             'urlFormat'=>'path',
-            'showScriptName'=>false,
+            'showScriptName'=>true,
             'rules'=>array(
                 //'<controller:\w+>'=>'<controller>/list',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

@@ -28,34 +28,38 @@ class MainSidebar extends CWidget
 		$items=array();
 		$controller=$this->controller;
 		$action=$controller->action;
-
-		if($controller->id == 'content')
-		{
-			switch($action->id){
-				case 'about':$cate_id = 11;break;
-				case 'education':$cate_id = 13;break;
-				case 'honor':$cate_id = 12;break;
-			}
-			
-			
-			
-			$message .= '<dt>'.CHtml::encode($root->name).'</dt>';
-			$content = content::model()->findAll($criteria);
+        
+		if($controller->id == 'site' && $action->id == 'page'){
+		    
+			$message .= '<dt>走进华科</dt>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('集团简介', array('/site/page','view'=>'intro')).'</dd>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('董事长致辞', array('/site/page','view'=>'intro')).'</dd>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('华科之路', array('/site/page','view'=>'intro')).'</dd>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('发展战略', array('/site/page','view'=>'intro')).'</dd>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('经营理念', array('/site/page','view'=>'intro')).'</dd>';
 			$message .= '<dd'.$class_name.'>'.CHtml::link('社会责任', array('/site/page','view'=>'intro')).'</dd>';
-/*            $root = tree::model()->findByPK($cate_id);
+			
+			$message = '<dl>'.$message.'</dl>';
+		}elseif($controller->id == 'content'){
+		    
+			switch($action->id){
+				case 'about':$cate_id = 11;break;
+				case 'hr':$cate_id = 13;break;
+				case 'culture':$cate_id = 12;break;
+				case 'biz':$cate_id = 14;break;
+				case 'honor':$cate_id = 12;break;
+			}
 			$criteria=new CDbCriteria;
 			$criteria->condition = "cate_id = $cate_id";
-			$criteria->order = "sort desc";*/
-/*			foreach($content as $tree)
+			//$criteria->condition = $cate_id = Yii::app()->request->getParam('id') ? 
+            //"cate_id = $cate_id" : "icon='{$action->id}'";
+			$criteria->order = "sort desc";
+			$content = content::model()->findAll($criteria);
+			foreach($content as $tree)
 			{
 				$class_name = $tree->id == $_GET['id'] ? ' class = "show"' : '';
 				$message .= '<dd'.$class_name.'>'.CHtml::link($tree->title,array('/content/'.$action->id,'id'=>$tree->id)).'</dd>';
-			}*/
+			}
 			$message = '<dl>'.$message.'</dl>';
 		}elseif ($controller->id == 'product'){
 		    

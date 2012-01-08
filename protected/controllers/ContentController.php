@@ -14,25 +14,20 @@ class ContentController extends Controller
 		$this->render('content',array('content'=>$content));
 	}
 
-	public function actionService() {
+	public function actionHr() {
 		$this->cate_id = 13;
         $content=content::model()->getContent($_GET['id'],$this->cate_id);
 		$this->render('content',array('content'=>$content));
 	}
 
-	public function actionEducation() {
-		$this->cate_id = 13;
-        $content=content::model()->getContent($_GET['id'],$this->cate_id);
-		$this->render('content',array('content'=>$content));
-	}
 	
-	public function actionHonor() {
+	public function actionCulture() {
 		$this->cate_id = 12;
         $content=content::model()->getContent($_GET['id'],$this->cate_id);
 		$this->render('content',array('content'=>$content));
 	}	
 
-	public function actionLife() {
+	public function actionBiz() {
 		$this->cate_id = 14;
         $content=content::model()->getContent($_GET['id'],$this->cate_id);
 		$this->render('content',array('content'=>$content));
